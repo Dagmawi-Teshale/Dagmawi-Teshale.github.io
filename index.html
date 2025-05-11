@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagmawi Teshale | MERN Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">DT</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Dagmawi Teshale</h1>
+                <h2>MERN Stack Developer</h2>
+                <div class="typing-text">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </div>
+                <div class="scroll-down">
+                    <a href="#about">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="bio-short">I'm a passionate MERN Stack Developer focused on building full-stack web applications that solve real-world problems. I enjoy working with modern technologies to create efficient, scalable, and user-friendly solutions.</p>
+                    <div class="bio-extended">
+                        <p>With a strong foundation in both frontend and backend development, I strive to create seamless user experiences while ensuring robust application architecture. I'm constantly learning and exploring new technologies to enhance my skills and stay current with industry trends.</p>
+                        <p>When I'm not coding, I enjoy playing football and being active.</p>
+                    </div>
+                    <button class="bio-toggle">Read More</button>
+                </div>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                            <span>Express</span>
+                        </div>
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Bookstore MERN App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Bookstore MERN App</h3>
+                        <p>A full-stack bookstore application with features for browsing, searching, and purchasing books.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn details-btn" data-project="bookstore">View Details</button>
+                            <a href="https://github.com/Dagmawi-Teshale/Book-Store-Mern-Stack.git" class="btn" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content">
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                    <div class="contact-links">
+                        <a href="mailto:dagmawi939@gmail.com"><i class="fas fa-envelope"></i> dagmawi939@gmail.com</a>
+                        <a href="https://linkedin.com/in/dagmawi-teshale-3325311b6" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/Dagmawi-Teshale" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn submit-btn">Send Message</button>
+                    </form>
+                    <div id="form-success" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Your message has been sent successfully!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://github.com/Dagmawi-Teshale" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dagmawi-teshale-3325311b6" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">&copy; 2023 Dagmawi Teshale. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
